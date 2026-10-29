@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mel Omarion — Videographer & Editor</title>
+  <meta name="description" content="Mel Omarion, videographer and video editor. Weddings, ads, documentaries and music videos. I make ideas into visuals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="logo">MEL<span>.</span>OMARION</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <!-- Put your showreel at assets/showreel.mp4 (and a still at assets/showreel-poster.jpg) -->
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/showreel-poster.jpg">
+      <source src="assets/showreel.mp4" type="video/mp4">
+    </video>
+    <div class="hero-shade"></div>
+
+    <div class="hud hud-tl"><span class="rec"></span>REC</div>
+    <div class="hud hud-tr" id="timecode">00:00:00:00</div>
+    <div class="hud hud-bl">4K · 24FPS · 2.39:1</div>
+    <div class="hud hud-br">ISO 800 · f/2.8</div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Videographer / Video Editor</p>
+      <h1 class="hero-title">
+        <span class="line">I make ideas</span>
+        <span class="line">into <em>visuals.</em></span>
+      </h1>
+      <div class="hero-actions">
+        <button class="btn btn-play" id="playReel" data-video="">
+          <span class="play-icon" aria-hidden="true"></span> Watch showreel
+        </button>
+        <a href="#work" class="btn btn-ghost">See the work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Weddings</span><i>✦</i><span>Commercials</span><i>✦</i><span>Documentaries</span><i>✦</i><span>Music Videos</span><i>✦</i><span>Color Grading</span><i>✦</i><span>Editing</span><i>✦</i>
+      <span>Weddings</span><i>✦</i><span>Commercials</span><i>✦</i><span>Documentaries</span><i>✦</i><span>Music Videos</span><i>✦</i><span>Color Grading</span><i>✦</i><span>Editing</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <p class="label">01 — Selected work</p>
+      <h2>Frames that<br>tell stories.</h2>
+    </div>
+    <div class="filters" id="filters" role="tablist">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="wedding">Weddings</button>
+      <button class="filter" data-filter="ad">Ads</button>
+      <button class="filter" data-filter="documentary">Documentaries</button>
+      <button class="filter" data-filter="music">Music Videos</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="section-head">
+      <p class="label">02 — What I do</p>
+      <h2>From first idea<br>to final cut.</h2>
+    </div>
+    <div class="service-list">
+      <article class="service">
+        <span class="service-num">01</span>
+        <h3>Weddings</h3>
+        <p>Cinematic films of your day that are honest, emotional, and made to be rewatched for decades.</p>
+      </article>
+      <article class="service">
+        <span class="service-num">02</span>
+        <h3>Ads & Brand Films</h3>
+        <p>Short, punchy content for brands, from concept and shoot to a cut built for every platform.</p>
+      </article>
+      <article class="service">
+        <span class="service-num">03</span>
+        <h3>Documentaries</h3>
+        <p>Real people and real places, told with patience and care for the story.</p>
+      </article>
+      <article class="service">
+        <span class="service-num">04</span>
+        <h3>Music Videos</h3>
+        <p>Bold visuals that match the sound, with rhythm-driven editing and a strong look.</p>
+      </article>
+      <article class="service">
+        <span class="service-num">05</span>
+        <h3>Editing & Color</h3>
+        <p>Already have footage? I'll handle the edit, sound design, and color grade.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about-media">
+      <!-- Replace with your photo: assets/portrait.jpg -->
+      <img src="assets/portrait.jpg" alt="Portrait of Mel Omarion" loading="lazy" onerror="this.parentElement.classList.add('no-img'); this.remove();">
+    </div>
+    <div class="about-text">
+      <p class="label">03 — About</p>
+      <h2>Hi, I'm Mel.</h2>
+      <p class="lead">I'm a videographer and video editor. I turn ideas into visuals that people feel.</p>
+      <p>Weddings, ads, documentaries, music videos: whatever the project, I handle it from first idea to final cut, with attention to light, rhythm, and story. You get a film that looks great and feels true to you.</p>
+      <ul class="stats">
+        <li><strong data-count="120">0</strong><span>Projects delivered</span></li>
+        <li><strong data-count="40">0</strong><span>Weddings filmed</span></li>
+        <li><strong data-count="6">0</strong><span>Years behind the lens</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="label">04 — Contact</p>
+    <h2 class="contact-title">Got an idea?<br><a href="mailto:elomari.ma@gmail.com">Let's film it.</a></h2>
+    <div class="contact-links">
+      <a href="mailto:elomari.ma@gmail.com"><span>Email</span>elomari.ma@gmail.com</a>
+      <a href="https://instagram.com/mel0mari" target="_blank" rel="noopener"><span>Instagram</span>@mel0mari</a>
+      <a href="https://github.com/elomarima-cell" target="_blank" rel="noopener"><span>GitHub</span>elomarima-cell</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Mel Omarion</span>
+    <span>Made frame by frame</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close video">✕</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
